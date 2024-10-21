@@ -10,6 +10,10 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# Ignore Firebase service account JSON file
+digi-complaints-firebase-adminsdk-h7j9z-9105be2a3d.json
+
+
 # Runtime data
 pids
 *.pid
