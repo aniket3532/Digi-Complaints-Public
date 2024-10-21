@@ -112,6 +112,7 @@ def reset_password(userType):
         secqn = request.json.get('secqn')
         secans = request.json.get('secans')
         new_password = request.json.get('password')
+    
         cpassword = request.json.get('cpassword')
 
         # Validate new password and confirm password match
@@ -119,7 +120,7 @@ def reset_password(userType):
             return jsonify({'error': 'Passwords do not match'}), 400
 
         db = initialize_firebase()
-        users_ref = db.collection(userType+'s')
+        users_ref = db.collection(userType+'s') 
         query = users_ref.where(field_path='uniqueId', op_string='==', value=uniqueid).limit(1).get()
         for doc in query:
             user_data = doc.to_dict()
