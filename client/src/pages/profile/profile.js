@@ -343,7 +343,7 @@ const ProfilePage = () => {
       </div>
       
       
-  <div className="question-box">
+  {/* <div className="question-box">
         <p id="question-heading">Security Question</p>
         <div className="question">
           Security Question 1
@@ -357,7 +357,7 @@ const ProfilePage = () => {
         <div className="question">
         Security Question 4
         </div>
-      </div>
+      </div> */}
         <div className="edit-button">
       <Button variant="contained" onClick={handleOpen}>
         Edit Profile
@@ -405,44 +405,7 @@ const ProfilePage = () => {
             <MenuItem value="Admin">Admin</MenuItem>
           </TextField>
           
-           {/* // name="photo"
-            // label="Photo URL"
-            // value={editedUser.photo}
-            // onChange={handleInputChange}
-            // fullWidth
-          // /> */}
-          <TextField
-          sx={{marginTop:"14px"}}
-            name="secqn1"
-            label="Security Question 1"
-            value={editedUser.secqn1}
-            onChange={handleInputChange}
-            fullWidth
-          />
-          <TextField
-          sx={{marginTop:"14px"}}
-            name="secqn2"
-            label="Security Question 2"
-            value={editedUser.secqn2}
-            onChange={handleInputChange}
-            fullWidth
-          />
-          <TextField
-          sx={{marginTop:"14px"}}
-            name="secqn3"
-            label="Security Question 3"
-            value={editedUser.secqn3}
-            onChange={handleInputChange}
-            fullWidth
-          />
-          <TextField
-          sx={{marginTop:"14px"}}
-            name="secqn4"
-            label="Security Question 4"
-            value={editedUser.secqn4}
-            onChange={handleInputChange}
-            fullWidth
-          />
+          
           <TextField
           sx={{marginTop:"14px"}}
             name="uniqueId"

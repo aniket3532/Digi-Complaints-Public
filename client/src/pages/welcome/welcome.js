@@ -172,7 +172,7 @@ const WelcomePage = () => {
               </div>
             </div>
 
-            <div className="menu-home">
+            {/* <div className="menu-home">
               <div className="dropdown">
                 <motion.button
                   className="dropdown-toggle"
@@ -222,7 +222,7 @@ const WelcomePage = () => {
                   </motion.li>
                 </motion.ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="wel">
@@ -248,7 +248,7 @@ const WelcomePage = () => {
                 Welcome to Digi Complaints
               </motion.div>
               <div className="page4">
-                <motion.button className="getstarted" onClick={() => scrollToSection(section1Ref)}>
+                {/* <motion.button className="getstarted" onClick={() => scrollToSection(section1Ref)}>
                   LEARN MORE
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +260,7 @@ const WelcomePage = () => {
                     <path d="M0 0h24v24H0z" fill="none" />
                     <path d="M10 17l5-5-5-5v10z" />
                   </svg>
-                </motion.button>
+                </motion.button> */}
                 <motion.button
                   className="getstarted"
                   onClick={handleSignUpClick}
@@ -286,18 +286,18 @@ const WelcomePage = () => {
           </div>
         </div>
 
-        <div ref={section1Ref}>
+        {/* <div ref={section1Ref}>
           <AboutUs />
-        </div>
-        <div ref={section2Ref}>
+        </div> */}
+        {/* <div ref={section2Ref}>
           <Services />
-        </div>
-        <div ref={section3Ref}>
+        </div> */}
+        {/* <div ref={section3Ref}>
           <ContactUs />
-        </div>
-        <div ref={section4Ref}>
+        </div> */}
+        {/* <div ref={section4Ref}>
           <FeedbackComponent />
-        </div>
+        </div> */}
       </div>
     </>
   );

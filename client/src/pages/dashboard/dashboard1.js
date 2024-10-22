@@ -130,7 +130,7 @@ const Page1 = () => {
           {typeUser === "PIC" && <p onClick={() => navigate("/PICDashboard")}>PIC Dashboard</p>}
           {typeUser === "Vendor" && <p onClick={() => navigate("/vendorDashboard")}>Vendor Dashboard</p>}
           {typeUser === "Principal" && <p onClick={() => navigate("/principalDashboard")}>Principal Dashboard</p>}
-          <div className="drop">
+          {/* <div className="drop">
             <p onClick={toggleMenu} className="dropdown-toggle">
             Complaint{" "}
               <svg
@@ -149,9 +149,11 @@ const Page1 = () => {
                 <p style={optionStyle} onClick={() => navigate("/trial")}>Track Status of a Complaint</p>
               </div>
             )}
-          </div>
-          <p></p>
-          <p onClick={() => setCListStatus("HELP")}>Help</p>
+          </div> */}
+          {/* <p></p> */}
+          {/* <p onClick={() => setCListStatus("HELP")}>Help</p> */}
+          <p  onClick={() => navigate("/complaint")}>Create Complaint</p>
+          <p  onClick={() => navigate("/trial")}>Track Status of a Complaint</p>
           <p onClick={() => {localStorage.setItem("emailUser", ''); navigate("/")}}>Sign out</p>
         </div>
       </div>
@@ -167,7 +169,7 @@ const Page1 = () => {
             <div
               className="acard"
               onClick={() => handleOpenList("submitted")}
-              style={{backgroundColor: "red"}}
+              style={{backgroundColor: "#15B392"}}
             >
               <div className="cr">
                 <p className="cp"> SUBMITTED/IN PROCESS COMPLAINTS </p>
@@ -190,7 +192,7 @@ const Page1 = () => {
               </div>
             </div>
 
-            <div className="acard" style={{backgroundColor: "green"}} onClick={() => handleOpenList("resolved")}>
+            <div className="acard" style={{backgroundColor: "#54C392"}} onClick={() => handleOpenList("resolved")}>
               <div className="cr">
                 <p className="cp"> RESOLVED COMPLAINTS </p>
                 {/* <p className="cp">2</p> */}
@@ -211,7 +213,7 @@ const Page1 = () => {
                 <HiUserGroup />
               </div>
             </div>
-            <div className="acard" style={{backgroundColor: "blue"}} onClick={() => handleOpenList("reverted")}>
+            <div className="acard" style={{backgroundColor: "#73EC8B"}} onClick={() => handleOpenList("reverted")}>
               <div className="cr">
                 <p className="cp">REVERTED COMPLAINTS</p>
                 {/* <p className="cp">2</p> */}
@@ -232,7 +234,7 @@ const Page1 = () => {
                 <FaFolderOpen />
               </div>
             </div>
-            <div className="acard" style={{backgroundColor: "orange"}}  onClick={() => handleOpenList("declined")}>
+            <div className="acard" style={{backgroundColor: "#D2FF72"}}  onClick={() => handleOpenList("declined")}>
               <div className="cr">
                 <p className="cp">DECLINED COMPLAINTS</p>
                 <p className="cv">

@@ -4,7 +4,7 @@ from firebase_admin import firestore
 
 def initialize_firebase():
     if not firebase_admin._apps:
-        cred = credentials.Certificate(r"digi-complaints-firebase-adminsdk-h7j9z-9105be2a3d.json") # Change the sdk path accordingly
+        cred = credentials.Certificate(r"hello.json") # Change the sdk path accordingly
 
         firebase_admin.initialize_app(cred)
 

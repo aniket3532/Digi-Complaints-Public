@@ -123,7 +123,7 @@ const HODDashboard = () => {
         <div className="details">
           <p onClick={() => navigate("/")}>Home</p>
           <p onClick={() => navigate("/profile")}>Profile</p>
-          <div className="drop">
+          {/* <div className="drop">
             <p onClick={toggleMenu} className="dropdown-toggle">
             Complaint{" "}
               <svg
@@ -142,9 +142,11 @@ const HODDashboard = () => {
                 <p style={optionStyle} onClick={() => navigate("/trial")}>Track Status of a Complaint</p>
               </div>
             )}
-          </div>
-          <p></p>
-          <p onClick={() => setCListStatus("HELP")}>Help</p>
+          </div> */}
+          {/* <p></p> */}
+          {/* <p onClick={() => setCListStatus("HELP")}>Help</p> */}
+          <p  onClick={() => navigate("/complaint")}>Create Complaint</p>
+          <p  onClick={() => navigate("/trial")}>Track Status of a Complaint</p>
           <p onClick={() => {localStorage.setItem("emailUser", ''); navigate("/")}}>Sign out</p>
         </div>
       </div>

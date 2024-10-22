@@ -1,18 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .signup-page {
-  margin: -10px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  height: 100dvh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: url("../signup/spectos-customer-satisfaction-complaint-management.jpg");
-  background-size: cover;
+  background-color: #479274; /* Solid background color */
+  position: relative;
+  z-index: 1; /* Ensure it appears above the background */
 }
+
+.signup-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../signup/spectos-customer-satisfaction-complaint-management.jpg") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8; /* Adjust opacity to blend image and color */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+
+
+
 
 .signup-container {
   margin-bottom: 40px;
@@ -48,8 +65,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5px 0 2px 0;
+  margin: 3px 0 2px 0;
 }
+
+/* .content form .user-details-select{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px 0 2px 0;
+
+} */
 form .user-details .input-box {
   margin-bottom: 10px;
   width: calc(100% / 2 - 20px);
